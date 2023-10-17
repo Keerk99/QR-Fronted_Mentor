@@ -2,7 +2,7 @@ import styled from "styled-components";
 import QR from "../../assets/img/image-qr-code.png";
 
 const MainBody = styled.main`
-  background: rgb(214 226 240);
+  background: #d6e2f0;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,11 +18,21 @@ const Section = styled.section`
   gap: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.17);
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    padding: 1rem;
+    gap: 1rem;
+  }
 `;
 
 const Img = styled.img`
   width: 350px;
   border-radius: 1rem;
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 0) and (max-width: 424px) {
+    width: 200px;
+  }
 `;
 
 const H1 = styled.h1`
@@ -32,6 +42,14 @@ const H1 = styled.h1`
   text-align: center;
   font-weight: 700;
   color: #1f3251;
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+    max-width: 300px;
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 0) and (max-width: 424px) {
+    max-width: 200px;
+    font-size: 1rem;
+  }
 `;
 
 const P = styled.p`
@@ -41,6 +59,14 @@ const P = styled.p`
   margin-top: 0;
   font-weight: 400;
   color: #7b879d;
+  @media screen and (min-width: 425px) and (max-width: 767px) {
+    max-width: 300px;
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 0) and (max-width: 424px) {
+    max-width: 200px;
+    font-size: 0.75rem;
+  }
 `;
 
 export default function Main() {
